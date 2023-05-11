@@ -1,0 +1,138 @@
+.carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 40px 100px;
+    gap: 60px;
+    background-color: #f6f6f6;
+}
+
+.title {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.itemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 40px;
+    max-width: 1200px;
+}
+
+.paginationButtonsWrapper,
+.paginationWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.paginationWrapper > button,
+.nextButton,
+.prevButton,
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    font-family: Georgia;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 100px;
+}
+
+.pageContainer {
+    background-color: #f1cdb3;
+    border: 2px solid transparent;
+}
+
+.paginationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disabledLink > .nextButton,
+.disabledLink > .prevButton {
+    cursor: unset;
+    border: 2px solid #cdcdcd;
+    color: #cdcdcd;
+    background-color: transparent;
+}
+
+.disabledButton {
+    cursor: unset;
+    border: 2px solid #cdcdcd;
+    color: #cdcdcd;
+    background-color: transparent;
+}
+
+.nextButton,
+.prevButton,
+.firstPageButton,
+.lastPageButton {
+    color: #292929;
+    border: 2px solid #f1cdb3;
+    background-color: transparent;
+}
+
+.prevButton:hover,
+.nextButton:hover,
+.firstPageButton:hover,
+.lastPageButton:hover {
+    border: 2px solid transparent;
+    background-color: #f1cdb3;
+    transition: 0.3s;
+}
+
+.disabledLink > button:hover {
+    cursor: unset;
+    border: 2px solid #cdcdcd;
+    color: #cdcdcd;
+    background-color: transparent;
+    transition: 0;
+}
+
+@media (max-width: 1279px) {
+    .carouselContainer {
+        padding: 80px 30px 76px;  
+        gap: 30px;  
+    }
+
+    .itemsContainer {
+        gap: 30px 40px;
+    }
+}
+
+@media (max-width: 639px) {
+    .title {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    
+    .itemsContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .carouselContainer {
+        padding: 42px 10px;
+        gap: 42px;
+    }
+
+    .paginationButtonsWrapper,
+    .paginationWrapper {
+        gap: 10px;
+    }
+
+}

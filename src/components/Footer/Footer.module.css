@@ -1,0 +1,152 @@
+.footerContainer {
+    background: radial-gradient(
+        110.67% 538.64% at 5.73% 50%, 
+        #513D2F 0%, 
+        #1A1A1C 100%
+        ), #211F20;
+    }
+    
+.footerWrapper {
+    background-repeat: repeat;
+    background-image: url('../../assets/background/noise_transparent.svg');
+}
+
+.contentContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 40px 0 40px;
+}
+
+.contactsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.locationsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.locationsSection:first-child(.locationContainer) {
+    margin-top: 34px;
+}
+
+.locationsSection:last-child(.locationContainer) {
+    margin-top: 32px;
+}
+
+.title {
+    text-align: left;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: #fff;
+}
+
+.descriptionText {
+    text-align: left;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #f1cdb3;
+}
+
+.mailContainer,
+.phoneContainer,
+.locationContainer {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.mailContainer,
+.phoneContainer {
+    max-height: 32px;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+}
+.iconContainer > img {
+    width: 100%;
+    height: auto;
+}
+
+/* 964px is being used instead of 768 */
+@media (max-width: 964px) {
+    .contentContainer {
+        justify-content: space-around;
+        gap: 65px 60px;
+        padding: 30px 30px 0;
+    }
+
+    .locationsSection,
+    .contactsSection {
+        margin-bottom: 0;
+    }
+
+    .locationsSection {
+        gap: 33px;
+    }
+}
+
+@media (max-width: 692px) {
+    .contentContainer {
+        gap: 40px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .contactsSection, 
+    .locationsSection {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .locationContainer {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+}
+
+/* 470px is used instead of 320px */
+@media (max-width: 470px) {
+    .contentContainer {
+        padding: 30px 10px 0;
+        gap: 40px;
+    }
+
+    .contentContainer > img {
+        margin: 0 20px;
+    }
+
+    .title {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .descriptionText {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}

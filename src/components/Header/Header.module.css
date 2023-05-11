@@ -1,0 +1,91 @@
+.headerContainerLight,
+.headerContainerDark {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 40px;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.titleLight {
+    margin: 0;
+    color: #545454;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.titleDark {
+    margin: 0;
+    color: #F1CDB3;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.subtitleDark {
+    margin: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    color: #fff;
+}
+
+.subtitleLight {
+    margin: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    color: #292929;
+}
+
+.menuButtonSection {
+    z-index: 2;
+    display: none;
+    margin-right: 3px;
+}
+
+.closeImg {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .headerContainerLight,
+    .headerContainerDark {
+        margin: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .headerContainerDark {
+        height: 100%;
+        margin: 0;
+        padding: 30px 50px 30px 10px;
+    }
+
+    .headerContainerLight {
+        height: 100%;
+        margin: 0;
+        padding: 30px 50px 30px 10px;
+    }
+
+    .menuButtonSection {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+    }
+}

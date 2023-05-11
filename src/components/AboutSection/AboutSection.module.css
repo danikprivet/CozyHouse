@@ -1,0 +1,97 @@
+.aboutSectionContainer {
+    padding: 80px 40px 100px 40px;
+}
+
+.contentContainer {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 430px;
+}
+
+.title {
+    text-align: left;
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.content > p {
+    color: #4c4c4c;
+    text-align: left;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.pictureContainer > img {
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .aboutSectionContainer {
+        padding: 80px 170px 100px;
+    }
+    
+    .contentContainer {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .content {
+        order: 1;
+    }
+
+    .pictureContainer {
+        order: 2;
+    }
+}
+
+/* Instead of 320px, 470px is being used */
+@media (max-width: 470px) {
+    .aboutSectionContainer {
+        padding: 42px 25px;
+    }
+    
+    .contentContainer {
+        gap: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .title {
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+
+    .content p:first-of-type {
+        margin-top: 25px;
+    }
+
+    .content p:last-of-type {
+        margin-top: 22px;
+    }
+
+    .pictureContainer {
+        margin: 42px 5px 0;
+    } 
+
+}
